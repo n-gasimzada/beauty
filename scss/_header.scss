@@ -1,0 +1,28 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #EFEFEF;
+}
+
+.header-top {
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        min-height: 50px;
+    }
+
+    &__link {
+        color: #333;
+
+        &:hover {
+            color: #F13C6E;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}

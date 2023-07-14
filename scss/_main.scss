@@ -40,12 +40,15 @@
 
 .armchair {
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 80px;
+    background-size: contain;
+
+    @media(max-width: 991.98px) {
+        background-size: cover;
+    }
 }
 
 .armchair-content {
-    padding: 192px 0px;
+    padding: 173px 0px;
 
     &__title {
         font-size: 48px;
@@ -69,5 +72,89 @@
         border-radius: 40px;
         max-width: 170px;
         width: 100%;
+    }
+
+    @media(max-width: 1400px) {
+        padding: 100px 0 150px;
+    }
+
+    @media(max-width: 1150px) {
+        padding: 50px 0px;
+    }
+
+    @media(max-width: 991.98px) {
+        padding: 30px 0px;
+    }
+
+}
+
+// Special
+
+.special {
+    background-color: #EFEFEF;
+    padding: 80px 0px 100px;
+}
+
+.special-content {
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+        padding-bottom: 38px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    &__item {
+        background-color: #FFF;
+        max-width: 255px;
+        max-height: 363px;
+        padding: 25px 30px;
+        text-align: center;
+    }
+
+    &__item-img {
+        padding-bottom: 20px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__item-title {
+        font-size: 14px;
+        line-height: 140%;
+        color: #333;
+        padding-bottom: 20px;
+    }
+
+    &__item-price {
+        font-size: 21px;
+        font-weight: 500;
+        color: #000;
+        letter-spacing: 1.05px;
+        padding-bottom: 20px;
+    }
+
+    &__link {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.7px;
+        padding: 9px 40px;
+        background-color: #F13C6E;
+        border-radius: 30px;
+
+        &:hover {
+            color: #F13C6E;
+            background-color: #EFEFEF;
+            transition: all 0.2s ease-in-out;
+        }
     }
 }

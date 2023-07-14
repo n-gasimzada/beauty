@@ -254,9 +254,7 @@ body {
   }
 }
 .call-content .content__button {
-  color: #000;
   padding: 13px 26px;
-  border: 2px solid #F13C6E;
   border-radius: 40px;
 }
 .call-content .content__button:hover {
@@ -264,6 +262,10 @@ body {
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+.call-content .content__button_color {
+  color: #000;
+  border: 2px solid #F13C6E;
 }
 
 .line {
@@ -306,4 +308,35 @@ body {
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   color: #F13C6E;
+}
+
+.armchair {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+.armchair-content {
+  padding: 192px 0px;
+}
+.armchair-content__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.armchair-content__text {
+  font-size: 14px;
+  line-height: 142%;
+  color: #FFF;
+  max-width: 308px;
+  margin-bottom: 50px;
+}
+.armchair-content__button {
+  color: #fff;
+  padding: 13px 26px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  max-width: 170px;
+  width: 100%;
 }

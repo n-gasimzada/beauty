@@ -35,3 +35,39 @@
         }
     }
 }
+
+// Armchair
+
+.armchair {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.armchair-content {
+    padding: 192px 0px;
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 142%;
+        color: #FFF;
+        max-width: 308px;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        color: #fff;
+        padding: 13px 26px;
+        border: 1px solid #fff;
+        border-radius: 40px;
+        max-width: 170px;
+        width: 100%;
+    }
+}

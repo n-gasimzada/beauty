@@ -155,14 +155,18 @@
     }
 
     .content__button {
-        color: #000;
         padding: 13px 26px;
-        border: 2px solid #F13C6E;
         border-radius: 40px;
 
         &:hover {
             border: 2px solid #333;
             transition: 0.2s ease-in-out;
+        }
+
+        &_color {
+            color: #000;
+            border: 2px solid #F13C6E;
+
         }
     }
 }

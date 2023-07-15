@@ -1,0 +1,106 @@
+.footer {
+    background-color: #fff;
+    padding: 65px 0px 38px;
+}
+
+.footer-content {
+    margin-bottom: 97px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    @media (max-width: 991.98px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+        color: #000;
+        max-width: 99px;
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        font-size: 12px;
+        line-height: 233%;
+    }
+
+    &__link {
+        color: #828282;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 991.98px) {
+           flex-direction: column;
+        }
+    }
+
+    &__social-media {
+        display: flex;
+        column-gap: 20px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            width: 45px;
+            height: 45px;
+            border: 1px solid #F13C6E;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 991.98px) {
+            margin-bottom: 15px;
+         }
+
+    }
+
+    &__adress {
+        color: #000;
+
+        @media (max-width: 991.98px) {
+            margin-bottom: 15px;
+         }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+
+        @media (max-width: 991.98px) {
+            flex-direction: column;
+         }
+    }
+
+    &__phone-number {
+        font-size: 16px;
+        color: #000;
+
+        @media (max-width: 991.98px) {
+            margin-bottom: 15px;
+         }
+    }
+
+    &__button {
+        color: #000;
+        padding: 13px 26px;
+        border: 2px solid #F13C6E;
+        border-radius: 40px;
+
+        &:hover {
+            border: 2px solid #333;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
